@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      PrePro Examples
+    </title>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script><script src="js/app.js"></script>
+  </head>
+  <body ng-app="">
+    <h1>
+      Markup examples 3
+    </h1>
+    <div id="content" ng-controller="MainController">
+      <p>
+        This example shows you how a basic Slim file looks like.
+      </p>
+      <p>
+        Hallo {{ name }}
+      </p>
+      <ul>
+        <li ng-repeat="framework in frameworks">
+          {{framework.name}} - http://{{framework.url}}
+        </li>
+      </ul>
+      <input ng-model="newFramework" type="text"><button ng-click="addFramework()">Hinzufügen</button>
+    </div>
+    <div id="footer">
+      <Copyright>© 2016</Copyright>
+    </div>
+  </body>
+</html>
